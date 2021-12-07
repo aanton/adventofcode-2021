@@ -7,13 +7,16 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "@aanton",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "prettier": "2.4.1"
   },
   "type": "module",
@@ -21,5 +24,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aanton/adventofcode-2021.git"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{js,json,md}": "prettier --check"
   }
 }
