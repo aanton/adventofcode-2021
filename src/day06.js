@@ -20,5 +20,5 @@ const countFishes = function (fishes, days) {
   return fishesByAge.reduce((acc, value) => acc + value, 0)
 }
 
-console.log('Fishes after 80 days', countFishes(fishes, 80))
-console.log('Fishes after 80 days', countFishes(fishes, 256))
+console.log('Fishes after 80 days (part 1)', countFishes(fishes, 80))
+console.log('Fishes after 256 days (part 2)', countFishes(fishes, 256))

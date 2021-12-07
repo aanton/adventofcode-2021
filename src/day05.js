@@ -29,5 +29,5 @@ const getTotalPoints = function (array, excludeDiagonalLines) {
   return [...points.values()].filter(value => value >= 2).length
 }
 
-console.log('Without diagonal lines', getTotalPoints(array, true))
-console.log('With diagonal lines', getTotalPoints(array, false))
+console.log('Without diagonal lines (part 1)', getTotalPoints(array, true))
+console.log('With diagonal lines (part 2)', getTotalPoints(array, false))
