@@ -13,6 +13,7 @@ Project setup uses:
 
 - Clone this project
 - Install dependecies
+- Copy the challenges input data from their rules pages
 - Run the day X challenges
 
 ```bash
