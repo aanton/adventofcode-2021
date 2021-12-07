@@ -8,6 +8,23 @@ Project setup uses:
 - [ESLint](https://eslint.org/) for code linting
 - vscode settings to run Prettier & ESLint on save
 
+## Installation & usage
+
+- Clone this project
+- Install dependecies
+- Run the day X challenges
+
+```bash
+npm install
+
+# Run day 1 challenges (each part is coded in its own file)
+node src/day01-1.js
+node src/day01-2.js
+
+# Run day 5 challenges (both parts are coded in the same file)
+node src/day05.js
+```
+
 ## Challenges
 
 - Day 1: Sonar Sweep ([rules](https://adventofcode.com/2021/day/1)) ([part 1](./src/day01-1.js)) ([part 2](./src/day01-2.js))
