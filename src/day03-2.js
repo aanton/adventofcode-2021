@@ -3,8 +3,6 @@ import {readFileSync} from 'fs'
 const {pathname} = new URL('../inputs/day03.txt', import.meta.url)
 const array = readFileSync(pathname).toString().split('\n')
 
-console.log(`Number of lines: ${array.length}`)
-
 const getMostCommonDigit = function (array, index) {
   const total = array.length
   const zeroes = array
@@ -37,9 +35,7 @@ const getCO2Rating = function (array, index) {
     : getCO2Rating(filteredArray, index + 1)
 }
 
-const oxygenRating = getOxygenRating(array, 0)
-const CO2Rating = getCO2Rating(array, 0)
+const oxygenRating = parseInt(getOxygenRating(array, 0), 2)
+const CO2Rating = parseInt(getCO2Rating(array, 0), 2)
 
-console.log(oxygenRating, parseInt(oxygenRating, 2))
-console.log(CO2Rating, parseInt(CO2Rating, 2))
-console.log(parseInt(oxygenRating, 2) * parseInt(CO2Rating, 2))
+console.log('Day 3 (part 2)', oxygenRating * CO2Rating)

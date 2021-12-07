@@ -2,10 +2,8 @@ import {readFileSync} from 'fs'
 
 const {pathname} = new URL('../inputs/day07.txt', import.meta.url)
 const array = readFileSync(pathname).toString().split('\n')
-console.log(`Number of lines: ${array.length}`)
 
 const positions = array[0].split(',').map(position => parseInt(position))
-console.log(`Number of positions: ${positions.length}`)
 
 const countByPosition = positions.reduce((acc, position) => {
   acc[position] = acc[position] ? acc[position] + 1 : 1
@@ -23,4 +21,4 @@ const distanceByPosition = new Array(countByPosition.length)
     }, 0)
   })
 
-console.log(Math.min(...distanceByPosition))
+console.log('Day 7 (part 1)', Math.min(...distanceByPosition))

@@ -3,8 +3,6 @@ import {readFileSync} from 'fs'
 const {pathname} = new URL('../inputs/day03.txt', import.meta.url)
 const array = readFileSync(pathname).toString().split('\n')
 
-console.log(`Number of lines: ${array.length}`)
-
 const total = array.length
 const gamma = Array.from({length: array[0].length})
   .map((_, index) => {
@@ -19,4 +17,4 @@ const epsilon = gamma
   .map(digit => (digit === '0' ? '1' : '0'))
   .join('')
 
-console.log(parseInt(gamma, 2) * parseInt(epsilon, 2))
+console.log('Day 3 (part 1)', parseInt(gamma, 2) * parseInt(epsilon, 2))

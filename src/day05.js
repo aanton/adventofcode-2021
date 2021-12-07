@@ -3,8 +3,6 @@ import {readFileSync} from 'fs'
 const {pathname} = new URL('../inputs/day05.txt', import.meta.url)
 const array = readFileSync(pathname).toString().split('\n')
 
-console.log(`Number of lines: ${array.length}`)
-
 const getTotalPoints = function (array, excludeDiagonalLines) {
   const points = new Map()
 
@@ -29,5 +27,5 @@ const getTotalPoints = function (array, excludeDiagonalLines) {
   return [...points.values()].filter(value => value >= 2).length
 }
 
-console.log('Without diagonal lines (part 1)', getTotalPoints(array, true))
-console.log('With diagonal lines (part 2)', getTotalPoints(array, false))
+console.log('Day 5 (part 1: wout diagonal lines)', getTotalPoints(array, true))
+console.log('Day 5 (part 2: with diagonal lines)', getTotalPoints(array, false))

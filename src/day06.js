@@ -2,10 +2,8 @@ import {readFileSync} from 'fs'
 
 const {pathname} = new URL('../inputs/day06.txt', import.meta.url)
 const array = readFileSync(pathname).toString().split('\n')
-console.log(`Number of lines: ${array.length}`)
 
 const fishes = array[0].split(',').map(fish => parseInt(fish))
-console.log(`Number of fishes: ${fishes.length}`)
 
 const countFishes = function (fishes, days) {
   let fishesByAge = new Array(9).fill(0)
@@ -20,5 +18,5 @@ const countFishes = function (fishes, days) {
   return fishesByAge.reduce((acc, value) => acc + value, 0)
 }
 
-console.log('Fishes after 80 days (part 1)', countFishes(fishes, 80))
-console.log('Fishes after 256 days (part 2)', countFishes(fishes, 256))
+console.log('Day 6 (part 1: 80 days)', countFishes(fishes, 80))
+console.log('Day 6 (part 2: 256 days)', countFishes(fishes, 256))

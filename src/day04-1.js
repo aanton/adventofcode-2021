@@ -3,8 +3,6 @@ import {readFileSync} from 'fs'
 const {pathname} = new URL('../inputs/day04.txt', import.meta.url)
 const array = readFileSync(pathname).toString().split('\n')
 
-console.log(`Number of lines: ${array.length}`)
-
 const arePositionsChecked = function (board, positions) {
   return positions.every(position => board[position] === false)
 }
@@ -52,14 +50,16 @@ for (const number of numbers) {
   const winner = boards.find(isWinnerBoard)
 
   if (winner) {
-    console.log(number, winner)
+    console.log('Number', number)
+    console.log('Winner board', winner)
 
     const sumPendingNumber = winner
       .filter(Boolean)
       .reduce(function (acc, value) {
         return acc + parseInt(value)
       }, 0)
-    console.log(number * sumPendingNumber)
+
+    console.log('Day 4 (part 1)', number * sumPendingNumber)
 
     break
   }
