@@ -1,7 +1,7 @@
 {
   "name": "adventofcode-2021",
   "version": "1.0.0",
-  "description": "My JS solutions to Advent of Code 2021",
+  "description": "My JavaScript solutions to Advent of Code 2021",
   "private": true,
   "scripts": {
     "format": "prettier --check .",
@@ -16,5 +16,10 @@
     "eslint": "^8.3.0",
     "prettier": "2.4.1"
   },
-  "type": "module"
+  "type": "module",
+  "homepage": "https://github.com/aanton/adventofcode-2021#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aanton/adventofcode-2021.git"
+  }
 }
