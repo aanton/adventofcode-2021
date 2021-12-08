@@ -36,3 +36,4 @@ node src/day05.js
 - Day 5: Hydrothermal Venture ([rules](https://adventofcode.com/2021/day/5)) ([part 1&2](./src/day05.js))
 - Day 6: Lanternfish ([rules](https://adventofcode.com/2021/day/6)) ([part 1&2](./src/day06.js))
 - Day 7: The Treachery of Whales ([rules](https://adventofcode.com/2021/day/7)) ([part 1](./src/day07-1.js)) ([part 2](./src/day07-2.js))
+- Day 8: Seven Segment Search ([rules](https://adventofcode.com/2021/day/8)) ([part 1](./src/day08-1.js)) ([part 2](./src/day08-2.js))
