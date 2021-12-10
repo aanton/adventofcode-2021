@@ -28,31 +28,31 @@ const getLowPoints = function () {
 }
 
 const isValidPoint = function ([i, j]) {
-  return (i >= 0) & (i <= iLast) && j >= 0 && j <= jLast && lines[i][j] !== '9'
+  return lines[i]?.[j] !== undefined && lines[i][j] !== '9'
 }
 
-const isIncluded = function (point, points) {
-  return points.some(_point => point[0] === _point[0] && point[1] === _point[1])
+const isPointInList = function ([i, j], points) {
+  return points.some(point => i === point[0] && j === point[1])
+}
+
+const getNeighborsPoints = function ([i, j]) {
+  return [
+    [i - 1, j],
+    [i + 1, j],
+    [i, j - 1],
+    [i, j + 1],
+  ].filter(isValidPoint)
 }
 
 const getBasinSizeByPoint = function (point, excluded = []) {
-  const [i, j] = point
-  const top = [i - 1, j]
-  const bottom = [i + 1, j]
-  const left = [i, j - 1]
-  const right = [i, j + 1]
-
+  const neighbors = getNeighborsPoints(point)
   excluded.push(point)
 
   let size = 1
-  if (isValidPoint(top) && !isIncluded(top, excluded))
-    size += getBasinSizeByPoint(top, excluded)
-  if (isValidPoint(bottom) && !isIncluded(bottom, excluded))
-    size += getBasinSizeByPoint(bottom, excluded)
-  if (isValidPoint(left) && !isIncluded(left, excluded))
-    size += getBasinSizeByPoint(left, excluded)
-  if (isValidPoint(right) && !isIncluded(right, excluded))
-    size += getBasinSizeByPoint(right, excluded)
+  neighbors.forEach(neighbour => {
+    if (isPointInList(neighbour, excluded)) return
+    size += getBasinSizeByPoint(neighbour, excluded)
+  })
 
   return size
 }
