@@ -1,4 +1,4 @@
-# Advent of Code 2021
+# 🎅 Advent of Code 2021 🎄
 
 My JS solutions to [Advent of Code 2021](https://adventofcode.com/2021/) by [@ericwastl](https://twitter.com/ericwastl).
 
@@ -7,9 +7,9 @@ Project setup uses:
 - [Prettier](https://prettier.io/) for code formatting
 - [ESLint](https://eslint.org/) for code linting
 - vscode settings to run Prettier & ESLint on save
-- Pre-commit hook using [husky](https://typicode.github.io/husky/) [lint-staged](https://github.com/okonet/lint-staged) to ckeck code formatting & linting (Prettier & EsLint)
+- Pre-commit hook using [husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/okonet/lint-staged) to ckeck code formatting & linting (Prettier & EsLint)
 
-## Installation & usage
+## 💻️ Installation & usage
 
 - Clone this project
 - Install dependecies
@@ -27,7 +27,7 @@ node src/day01-2.js
 node src/day05.js
 ```
 
-## Challenges
+## 🕹️ Challenges
 
 - Day 1: Sonar Sweep ([rules](https://adventofcode.com/2021/day/1)) ([part 1](./src/day01-1.js)) ([part 2](./src/day01-2.js))
 - Day 2: Dive! ([rules](https://adventofcode.com/2021/day/2)) ([part 1](./src/day02-1.js)) ([part 2](./src/day02-2.js))
