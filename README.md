@@ -38,3 +38,4 @@ node src/day05.js
 - Day 7: The Treachery of Whales ([rules](https://adventofcode.com/2021/day/7)) ([part 1](./src/day07-1.js)) ([part 2](./src/day07-2.js))
 - Day 8: Seven Segment Search ([rules](https://adventofcode.com/2021/day/8)) ([part 1](./src/day08-1.js)) ([part 2](./src/day08-2.js))
 - Day 9: Smoke Basin ([rules](https://adventofcode.com/2021/day/9)) ([part 1](./src/day09-1.js)) ([part 2](./src/day09-2.js))
+- Day 10: Syntax Scoring ([rules](https://adventofcode.com/2021/day/10)) ([part 1](./src/day10-1.js)) ([part 2](./src/day10-2.js))
