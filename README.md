@@ -39,3 +39,4 @@ node src/day05.js
 - Day 8: Seven Segment Search ([rules](https://adventofcode.com/2021/day/8)) ([part 1](./src/day08-1.js)) ([part 2](./src/day08-2.js))
 - Day 9: Smoke Basin ([rules](https://adventofcode.com/2021/day/9)) ([part 1](./src/day09-1.js)) ([part 2](./src/day09-2.js))
 - Day 10: Syntax Scoring ([rules](https://adventofcode.com/2021/day/10)) ([part 1](./src/day10-1.js)) ([part 2](./src/day10-2.js))
+- Day 11: Dumbo Octopus ([rules](https://adventofcode.com/2021/day/11)) ([part 1](./src/day11-1.js)) ([part 2](./src/day11-2.js))
