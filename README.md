@@ -29,14 +29,16 @@ node src/day05.js
 
 ## 🕹️ Challenges
 
-- Day 1: Sonar Sweep ([rules](https://adventofcode.com/2021/day/1)) ([part 1](./src/day01-1.js)) ([part 2](./src/day01-2.js))
-- Day 2: Dive! ([rules](https://adventofcode.com/2021/day/2)) ([part 1](./src/day02-1.js)) ([part 2](./src/day02-2.js))
-- Day 3: Binary Diagnostic ([rules](https://adventofcode.com/2021/day/3)) ([part 1](./src/day03-1.js)) ([part 2](./src/day03-2.js))
-- Day 4: Giant Squid ([rules](https://adventofcode.com/2021/day/4)) ([part 1](./src/day04-1.js)) ([part 2](./src/day04-2.js))
-- Day 5: Hydrothermal Venture ([rules](https://adventofcode.com/2021/day/5)) ([part 1&2](./src/day05.js))
-- Day 6: Lanternfish ([rules](https://adventofcode.com/2021/day/6)) ([part 1&2](./src/day06.js))
-- Day 7: The Treachery of Whales ([rules](https://adventofcode.com/2021/day/7)) ([part 1](./src/day07-1.js)) ([part 2](./src/day07-2.js))
-- Day 8: Seven Segment Search ([rules](https://adventofcode.com/2021/day/8)) ([part 1](./src/day08-1.js)) ([part 2](./src/day08-2.js))
-- Day 9: Smoke Basin ([rules](https://adventofcode.com/2021/day/9)) ([part 1](./src/day09-1.js)) ([part 2](./src/day09-2.js))
-- Day 10: Syntax Scoring ([rules](https://adventofcode.com/2021/day/10)) ([part 1](./src/day10-1.js)) ([part 2](./src/day10-2.js))
-- Day 11: Dumbo Octopus ([rules](https://adventofcode.com/2021/day/11)) ([part 1](./src/day11-1.js)) ([part 2](./src/day11-2.js))
+| Day | Name                    | Rules                                         | Part 1                     | Part 2                     |
+| --- | ----------------------- | --------------------------------------------- | -------------------------- | -------------------------- |
+| 1   | Sonar Sweep             | [rules](https://adventofcode.com/2021/day/1)  | [part 1](./src/day01-1.js) | [part 2](./src/day01-2.js) |
+| 2   | Dive!                   | [rules](https://adventofcode.com/2021/day/2)  | [part 1](./src/day02-1.js) | [part 2](./src/day02-2.js) |
+| 3   | Binary Diagnostic       | [rules](https://adventofcode.com/2021/day/3)  | [part 1](./src/day03-1.js) | [part 2](./src/day03-2.js) |
+| 4   | Giant Squid             | [rules](https://adventofcode.com/2021/day/4)  | [part 1](./src/day04-1.js) | [part 2](./src/day04-2.js) |
+| 5   | Hydrothermal Venture    | [rules](https://adventofcode.com/2021/day/5)  | [part 1](./src/day05.js)   | [part 2](./src/day05.js)   |
+| 6   | Lanternfish             | [rules](https://adventofcode.com/2021/day/6)  | [part 1](./src/day06.js)   | [part 2](./src/day06.js)   |
+| 7   | The Treachery of Whales | [rules](https://adventofcode.com/2021/day/7)  | [part 1](./src/day07-1.js) | [part 2](./src/day07-2.js) |
+| 8   | Seven Segment Search    | [rules](https://adventofcode.com/2021/day/8)  | [part 1](./src/day08-1.js) | [part 2](./src/day08-2.js) |
+| 9   | Smoke Basin             | [rules](https://adventofcode.com/2021/day/9)  | [part 1](./src/day09-1.js) | [part 2](./src/day09-2.js) |
+| 10  | Syntax Scoring          | [rules](https://adventofcode.com/2021/day/10) | [part 1](./src/day10-1.js) | [part 2](./src/day10-2.js) |
+| 11  | Dumbo Octopus           | [rules](https://adventofcode.com/2021/day/11) | [part 1](./src/day11-1.js) | [part 2](./src/day11-2.js) |
