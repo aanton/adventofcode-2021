@@ -26,39 +26,47 @@ const isValidDestination = function (route, destination) {
   if (!isSmallCave(destination)) return true
   if (!route.includes(destination)) return true
 
-  // Can not include twice the start & end caves
-  if (['start', 'end'].includes(destination)) return false
+  if (destination === 'start') return false
+  if (hasVisitedSmallCaveTwice(route)) return false
 
+  return true
+}
+
+const hasVisitedSmallCaveTwice = function (route) {
   const visitsByCave = route.filter(isSmallCave).reduce((acc, cave) => {
     acc[cave] = (acc[cave] || 0) + 1
     return acc
   }, {})
-  if (!Object.values(visitsByCave).some(visits => visits === 2)) return true
 
-  return false
+  return Object.values(visitsByCave).some(visits => visits === 2)
 }
 
-const getRoutes = function (connections) {
+const getCompletedRoutesCount = function (connections) {
+  let count = 0
+
   const routes = connections['start'].map(destination => ['start', destination])
 
-  let routeIndex = 0
-  while (routeIndex !== -1) {
-    const route = routes.splice(routeIndex, 1)[0]
-
+  let route = routes.shift()
+  while (route) {
     const lastCave = route[route.length - 1]
     connections[lastCave].forEach(destination => {
+      if (destination === 'end') {
+        count++
+        return
+      }
+
       if (!isValidDestination(route, destination)) return
 
       routes.push([...route, destination])
     })
 
-    routeIndex = routes.findIndex(route => route[route.length - 1] !== 'end')
+    route = routes.shift()
   }
 
-  return routes
+  return count
 }
 
 const connections = getCaveConnections()
-const routes = getRoutes(connections)
+const result = getCompletedRoutesCount(connections)
 
-console.log('Day 12 (part 2)', routes.length)
+console.log('Day 12 (part 2)', result)

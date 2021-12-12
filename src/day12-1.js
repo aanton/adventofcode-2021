@@ -29,27 +29,32 @@ const isValidDestination = function (route, destination) {
   return false
 }
 
-const getRoutes = function (connections) {
+const getCompletedRoutesCount = function (connections) {
+  let count = 0
+
   const routes = connections['start'].map(destination => ['start', destination])
 
-  let routeIndex = 0
-  while (routeIndex !== -1) {
-    const route = routes.splice(routeIndex, 1)[0]
-
+  let route = routes.shift()
+  while (route) {
     const lastCave = route[route.length - 1]
     connections[lastCave].forEach(destination => {
+      if (destination === 'end') {
+        count++
+        return
+      }
+
       if (!isValidDestination(route, destination)) return
 
       routes.push([...route, destination])
     })
 
-    routeIndex = routes.findIndex(route => route[route.length - 1] !== 'end')
+    route = routes.shift()
   }
 
-  return routes
+  return count
 }
 
 const connections = getCaveConnections()
-const routes = getRoutes(connections)
+const result = getCompletedRoutesCount(connections)
 
-console.log('Day 12 (part 1)', routes.length)
+console.log('Day 12 (part 1)', result)
