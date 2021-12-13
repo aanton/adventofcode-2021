@@ -42,4 +42,5 @@ node src/day05.js
 | 9   | Smoke Basin             | [rules](https://adventofcode.com/2021/day/9)  | [part 1](./src/day09-1.js) | [part 2](./src/day09-2.js) |
 | 10  | Syntax Scoring          | [rules](https://adventofcode.com/2021/day/10) | [part 1](./src/day10-1.js) | [part 2](./src/day10-2.js) |
 | 11  | Dumbo Octopus           | [rules](https://adventofcode.com/2021/day/11) | [part 1](./src/day11-1.js) | [part 2](./src/day11-2.js) |
-| 12  | Day 12: Passage Pathing | [rules](https://adventofcode.com/2021/day/12) | [part 1](./src/day12-1.js) | [part 2](./src/day12-2.js) |
+| 12  | Passage Pathing         | [rules](https://adventofcode.com/2021/day/12) | [part 1](./src/day12-1.js) | [part 2](./src/day12-2.js) |
+| 13  | Transparent Origami     | [rules](https://adventofcode.com/2021/day/13) | [part 1](./src/day13-1.js) | [part 2](./src/day13-2.js) |
