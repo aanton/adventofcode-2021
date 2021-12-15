@@ -45,4 +45,4 @@ node src/day05.js
 | 12  | Passage Pathing         | [rules](https://adventofcode.com/2021/day/12) | [part 1](./src/day12-1.js) | [part 2](./src/day12-2.js) |
 | 13  | Transparent Origami     | [rules](https://adventofcode.com/2021/day/13) | [part 1](./src/day13-1.js) | [part 2](./src/day13-2.js) |
 | 14  | Extended Polymerization | [rules](https://adventofcode.com/2021/day/14) | [part 1](./src/day14-1.js) | [part 2](./src/day14-2.js) |
-| 15  | Chiton                  | [rules](https://adventofcode.com/2021/day/15) | [part 1](./src/day15-1.js) |                            |
+| 15  | Chiton                  | [rules](https://adventofcode.com/2021/day/15) | [part 1](./src/day15-1.js) | [part 2](./src/day15-2.js) |
