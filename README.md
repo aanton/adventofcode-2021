@@ -2,12 +2,12 @@
 
 My JS solutions to [Advent of Code 2021](https://adventofcode.com/2021/) by [@ericwastl](https://twitter.com/ericwastl).
 
-Project setup uses:
+## 💅 Project setup
 
 - [Prettier](https://prettier.io/) for code formatting
 - [ESLint](https://eslint.org/) for code linting
-- vscode settings to run Prettier & ESLint on save
-- Pre-commit hook using [husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/okonet/lint-staged) to ckeck code formatting & linting (Prettier & EsLint)
+- vscode settings to run code formatting & linting on save
+- Pre-commit hook to ckeck code formatting & linting using [husky](https://typicode.github.io/husky/) & [lint-staged](https://github.com/okonet/lint-staged)
 
 ## 💻️ Installation & usage
 
