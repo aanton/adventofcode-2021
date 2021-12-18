@@ -43,4 +43,4 @@ node src/day03/part2.js
 | 13  | Transparent Origami     | [rules](https://adventofcode.com/2021/day/13) | [part 1](./src/day13/part1.js) | [part 2](./src/day13/part2.js) |
 | 14  | Extended Polymerization | [rules](https://adventofcode.com/2021/day/14) | [part 1](./src/day14/part1.js) | [part 2](./src/day14/part2.js) |
 | 15  | Chiton                  | [rules](https://adventofcode.com/2021/day/15) | [part 1](./src/day15/part1.js) | [part 2](./src/day15/part2.js) |
-| 16  | Packet Decoder          | [rules](https://adventofcode.com/2021/day/16) | [part 1](./src/day16/part1.js) |                                |
+| 16  | Packet Decoder          | [rules](https://adventofcode.com/2021/day/16) | [part 1](./src/day16/part1.js) | [part 2](./src/day16/part2.js) |
