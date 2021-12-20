@@ -45,3 +45,4 @@ node src/day03/part2.js
 | 15  | Chiton                  | [rules](https://adventofcode.com/2021/day/15) | [part 1](./src/day15/part1.js) | [part 2](./src/day15/part2.js) |
 | 16  | Packet Decoder          | [rules](https://adventofcode.com/2021/day/16) | [part 1](./src/day16/part1.js) | [part 2](./src/day16/part2.js) |
 | 17  | Trick Shot              | [rules](https://adventofcode.com/2021/day/17) | [part 1](./src/day17/part1.js) | [part 2](./src/day17/part2.js) |
+| 18  | Snailfish               | [rules](https://adventofcode.com/2021/day/18) | [part 1](./src/day18/part1.js) | [part 2](./src/day18/part2.js) |
