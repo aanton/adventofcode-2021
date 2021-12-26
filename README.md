@@ -47,7 +47,7 @@ node src/day03/part2.js
 | 17  | Trick Shot              | [rules](https://adventofcode.com/2021/day/17) | [part 1](./src/day17/part1.js) | [part 2](./src/day17/part2.js) |
 | 18  | Snailfish               | [rules](https://adventofcode.com/2021/day/18) | [part 1](./src/day18/part1.js) | [part 2](./src/day18/part2.js) |
 | 19  | Beacon Scanner          | [rules](https://adventofcode.com/2021/day/19) |                                |                                |
-| 20  | Trench Map              | [rules](https://adventofcode.com/2021/day/20) |                                |                                |
+| 20  | Trench Map              | [rules](https://adventofcode.com/2021/day/20) | [part 1](./src/day20/part1.js) |                                |
 | 21  | Dirac Dice              | [rules](https://adventofcode.com/2021/day/21) |                                |                                |
 | 22  | Reactor Reboot          | [rules](https://adventofcode.com/2021/day/22) |                                |                                |
 | 23  | Amphipod                | [rules](https://adventofcode.com/2021/day/23) |                                |                                |
